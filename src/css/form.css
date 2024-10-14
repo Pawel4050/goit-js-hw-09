@@ -1,43 +1,88 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
 .feedback-form {
-    width: 408px;
-    height: 296px;
-    position: relative;
-    /* top: -424px;
-    left: 2312px; */
-    padding: 24px 0 0 0;
-    gap: 16px;
-    border-radius: 8px 0 0 0;
-    border: 1px solid #000;
-    /* opacity: 0; */
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 408px;
+    height: 296px;
+    background: #FFFFFF;
+    border-radius: 8px;
 }
 
 .input-container {
-    width: 360px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
-    border: 1px solid #000;
-    padding: 16px;
-    border-radius: 4px;
+    width: 360px;
 }
 
 .input-container label {
-    text-align: left;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #2E2F42;
 }
 
 input[type="email"],
 textarea {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 8px;
     box-sizing: border-box;
+    width: 360px;
+    padding: 8px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    outline-color: #808080;
 }
 
-textarea {
-    resize: none;
-    height: 80px;
+input[type="email"]:hover {
+    border-color: #000000;
+    /* Ustawia kolor ramki na czarny przy najechaniu */
+}
+
+textarea:hover {
+    border-color: #000000;
+}
+
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #808080;
+    outline: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background: #4E75FF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6C8CFF;
 }
